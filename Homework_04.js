@@ -13,7 +13,7 @@ alert(sum);
 //Вторая задача
 
 let name = "Кракатау";
-let reg = /а+/ig;
+let reg = /а/ig;
 
 name = name.replace(reg, 'аа');
 
