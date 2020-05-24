@@ -105,9 +105,9 @@ function n(data) {
 		return 1;
 	}
 	
-	calc(data);
+	calc(n);
 	
-	function calc() {
+	function calc(n) {
 		if (n != 1) {
 			temp = data	* (n - 1);
 			data = temp;
@@ -117,7 +117,7 @@ function n(data) {
 	return temp;
 }
 
-let factorial = n(2);
+let factorial = n(3);
 console.log(factorial);
 
 // Пятая задача

@@ -1,0 +1,80 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+}
+
+.placeClock {
+	display: flex;
+	height: 2em;
+	align-items: center;
+}
+
+.divClock {
+	display: flex;
+}
+
+.timeColorBlue {
+	color: blue;
+	font-weight: 600;
+}
+
+.timeColorRed {
+	color: red;
+	font-weight: 600;
+}
+
+.timeColorGreen {
+	color: green;
+	font-weight: 600;
+}
+
+.productCard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border: 1px solid #656565;
+	border-radius: 3px;
+	padding-bottom: 10px;
+	width: 850px;
+}
+
+.divCard {
+	border-radius: 2px;
+	border: 1px solid #656565;
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.svetofor {
+	display: inline-block;
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.svetoforSection {
+	display: flex;
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+	padding: 5px;
+}
+.redLamp {
+	flex-grow: 1;
+	border-radius: 50%;
+	background-color: red;
+}
+.yellowLamp {
+	flex-grow: 1;
+	border-radius: 50%;
+	background-color: yellow;
+}
+.greenLamp {
+	flex-grow: 1;
+	border-radius: 50%;
+	background-color: green;
+}
