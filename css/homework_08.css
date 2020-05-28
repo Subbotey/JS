@@ -1,0 +1,121 @@
+.conteiner {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	align-items: center;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	width: 500px;
+}
+
+.button {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #868686;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.clrRed {
+	background-color: #FF4649;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+.clrGreen {
+	background-color: #61FF5F;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+.numberButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #D6F9FB;
+	font-size: 3em;
+	user-select: none; 
+}
+.comment {
+	padding: 10px;
+	
+}
+
+.buttonComment {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #A1A1A1;
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: #D7D7D7;
+	cursor: pointer;
+	font-weight: 600;
+	color: #434343;
+	user-select: none;
+	width: 170px;
+}
+
+.buttonComment:hover {
+	background-color: #C3C3C3;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.buttonComment:active {
+	background-color: #BBBBBB;
+	transition-property: background-color;
+	transition-duration: 0.3s;
+}
+
+.commentPlace {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.commentIn {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #A1A1A1;
+	border-radius: 3px;
+	background-color: #F3F3F3;
+	padding: 5px;
+	margin-bottom: 10px;
+	width: 450px;
+}
+
+.imgComment {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+table {
+	width: 100%;
+	border: 1px solid #DCDCDC;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	
+}
+
+th {
+	text-align: left;
+	border: 1px solid #DCDCDC;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+td {
+	border: 1px solid #DCDCDC;
+	padding: 5px;
+	width:25%;
+}
