@@ -7,7 +7,7 @@ let a = {
 
 function foo(data0, data1, data2) {
 	let arr = [];
-	
+
 	for (;data2 >= 0; data2--) {
 		if (data2 >= 1) {
 			let obj = {...data0}
@@ -19,7 +19,7 @@ function foo(data0, data1, data2) {
 	}
 	return arr;
 }
-	
+
 console.log(foo(a, 'count', 10));
 console.log(a);
 
@@ -28,21 +28,20 @@ console.log(a);
 function randomInt(min = 1, max = 100) {
 	let arr = [];
 	let rand;
-	
+
 	return function displayNum() {
 		let temp;
-		
+
 		if (arr.length == max) {
 			arr.splice(/0 - &{max}/);
 		}
-		
+
 		rand = min + Math.random() * (max + 1 - min);
 		rand = Math.floor(rand);
-		
+
 		for (let i = 0; i <= arr.length; i++) {
 			if (rand == arr[i]) {
 				return displayNum();
-				break;
 			} else {
 				temp = true;
 			}
@@ -71,14 +70,14 @@ function getCard(data) {
 	function card() {
 		console.log(this.name + " " + this.surname + ". Возраст " + this.age + ". Интересы: " + this.interest + ". Учится в " + this.place);
 		delete data.card;
-	};
-	
+	}
+
 	data.card = card;
-	
+
 	return data.card();
 }
 
-getCard(student); 
+getCard(student);
 
 // Второй вариант, вывод через метод объекта
 
@@ -100,20 +99,20 @@ student2.card();
 function n(data) {
 	let n = data;
 	let temp;
-	
+
 	if (data <= 1) {
 		return 1;
 	}
-	
+
 	calc(n);
-	
+
 	function calc(n) {
 		if (n != 1) {
 			temp = data	* (n - 1);
 			data = temp;
 			return calc(n -= 1);
 		}
-	};
+	}
 	return temp;
 }
 
