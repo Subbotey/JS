@@ -12,15 +12,15 @@ function getTime() {
 	let mNum = document.createElement('div');
 	let sNum = document.createElement('div');
 	let placeClock = document.getElementById('placeClock');
-	
+
 	if (minutes <= 9) {
 		minutes = '0' + minutes;
 	}
-	
+
 	if (seconds<= 9) {
 		seconds = '0' + seconds;
 	}
-	
+
 	clock.className = 'divClock';
 	hNum.className = 'timeColorBlue';
 	mNum.className = 'timeColorRed';
@@ -29,7 +29,7 @@ function getTime() {
 	mNum.innerHTML = minutes;
 	sNum.innerHTML = seconds;
 	dot.innerHTML = '<strong>&nbsp;:&nbsp;</strong>'
-	
+
 	clock.append(hNum);
 	clock.append(dot);
 	clock.append(mNum);
@@ -38,9 +38,9 @@ function getTime() {
 	placeClock.appendChild(clock);
 	setTimeout(() => clock.remove(), 1000);
 	setTimeout(getTime, 1000);
-	
+
 }
-	
+
 getTime();
 
 // Вторая задача
@@ -72,30 +72,30 @@ let sevenDays = [
 
 function addProduct(arr) {
 	let product = document.createElement('div');
-	
+
 	product.className = 'productCard';
 	product.setAttribute("id", "productCard");
-	placeClock.after(product);
-	
+
 	for(let i = 0; i < arr.length; i++){
 		let title = document.createElement('h2');
 		let img = document.createElement('img');
 		let price = document.createElement('p');
 		let taste = document.createElement('p');
 		let divCard = document.createElement('div');
-		
+
 		title.innerText = arr[i].title;
 		img.setAttribute("src", "img/" + arr[i].img);
 		price.innerText = "Стоимость " + arr[i].price + " руб.";
 		taste.innerText = 'Со вкусом ' + arr[i].taste;
-		
+
 		divCard.className = 'divCard';
 		divCard.appendChild(title);
 		divCard.appendChild(img);
 		divCard.appendChild(taste);
 		divCard.appendChild(price);
 		product.appendChild(divCard);
-	}	
+	}
+	placeClock.after(product);
 }
 
 addProduct(sevenDays);
@@ -112,7 +112,7 @@ function svetoforAnim() {
 	let redLamp = document.createElement('div');
 	let yellowLamp = document.createElement('div');
 	let greenLamp = document.createElement('div');
-	
+
 	svetofor.className = 'svetofor';
 	svetoforSection1.className = 'svetoforSection';
 	svetoforSection2.className = 'svetoforSection';
@@ -120,14 +120,14 @@ function svetoforAnim() {
 	redLamp.className = 'redLamp';
 	yellowLamp.className = 'yellowLamp';
 	greenLamp.className = 'greenLamp';
-	
+
 	product.after(svetofor);
 	svetofor.append(svetoforSection1);
 	svetofor.append(svetoforSection2);
 	svetofor.append(svetoforSection3);
-	
+
 	miganie();
-	
+
 	function miganie() {
 		setTimeout(() => svetoforSection1.append(redLamp), 0);
 		setTimeout(() => redLamp.remove(), 2000);

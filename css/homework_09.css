@@ -1,0 +1,74 @@
+table {
+	width: 50%;
+	border: 1px solid #DCDCDC;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid #DCDCDC;
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+
+.count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100px;
+	margin-top: 15px;
+	font-size: 3em;
+	color: #52e750;
+	background-color: #e2eff5;
+	border: 1px solid #DCDCDC;
+	border-radius: 3px;
+}
+
+.countStop {
+	background-color: #f09187;
+	color: #3e4bbf;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+.yes {
+	background-color: #70e054;
+	color: #636363;
+	font-weight: bolder;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+.no {
+	background-color: #e05454;
+	color: #d9d9d9;
+	font-weight: bolder;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+
+#present_container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+#present_container p {
+	background-color: red;
+	display: inline-block;
+	margin: 10px;
+	padding: 30px 5px;
+	text-align: center;
+	width: 200px;
+	color: white;
+	cursor: pointer;
+}
+
+#present_container .present {
+	background-color: orange;
+	color: #333;
+	transition-property: background-color;
+	transition-duration: 1s;
+}

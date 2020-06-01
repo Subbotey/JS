@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./css/homework_09.css">
+	<script src='./js/intUtils.js'></script> <!-- В этом файле первая задача-->
+	<script src='./js/homework_09.js'></script> <!-- В этом файле вторая задача-->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="myDiv" style="width:600px;height:500px;"></div>
+	<script>
+		let arr = [12,4,3,10,1,21];
+
+		myUtils.minElemArr(arr);
+		myUtils.maxElemArr(arr);
+		myUtils.meanAr(arr);
+
+		let newArr = myUtils.cloneArr(arr);
+
+		console.log('Старый массив: ' + arr);
+		console.log('Новый массив: ' + newArr);
+
+		Plotly.plot('myDiv',[data],layout);
+	</script>
+	<script src="./js/homework_09_Present.js"></script><!-- В этом файле Четвертая задача-->
+</body>
+</html>

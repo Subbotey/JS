@@ -7,7 +7,7 @@ buttonContainer.addEventListener('click', replaceClr, false);
 function replaceClr (e) {
 	let click = e.target;
 	let elem = click.classList;
-		
+
 	if (elem[1] == 'clrRed') {
 		click.classList.remove('clrRed');
 		click.classList.add('clrGreen');
@@ -25,7 +25,7 @@ replace.addEventListener('click', replaceNum, false);
 
 function replaceNum(e) {
 	let num = +replace.innerText;
-	
+
 	if (typeof num == "number") {
 		num += 1;
 		replace.innerText = num;
@@ -60,23 +60,23 @@ function addComment(e) {
 			let textCommen = document.createElement('p');
 			let date = document.createElement('div');
 			let div = document.createElement('div');
-			
+
 			avatarka.setAttribute("src", "img/" + (user.avatar));
 			avatarka.classList.add('imgComment');
 			name.innerText = 'Пользователь: ' + user.name;
 			date.innerText ='Написал: ' + user.date();
 			textCommen.innerText = text;
 			div.classList.add('commentIn');
-			
+
 			div.appendChild(avatarka);
 			div.appendChild(name);
 			div.appendChild(date);
 			div.appendChild(textCommen);
-			
+
 			commentPlace.appendChild(div);
-			
+
 			commentsText[0].value = '';
-			
+
 		} else {
 			alert('Введите текст комментария');
 		}
@@ -119,24 +119,24 @@ function renderBooks(arr) {
 	document.body.appendChild(div);
 	let tagBook = document.getElementById('book');
 
-	
+
 	for (let i = 0; i < arr.length; i++) {
 		let art = document.createElement('td');
 		let autor = document.createElement('td');
 		let title = document.createElement('td');
 		let description = document.createElement('td');
 		let tr = document.createElement('tr');
-		
+
 		art.innerText = arr[i].art;
 		autor.innerText = arr[i].autor;
 		title.innerText = arr[i].title;
 		description.innerText = arr[i].description;
-		
+
 		tr.appendChild(art);
 		tr.appendChild(autor);
 		tr.appendChild(title);
 		tr.appendChild(description);
-		
+
 		tagBook.appendChild(tr);
 	}
 }
