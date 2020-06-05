@@ -1,16 +1,9 @@
 // Первая задача
 
-function Product() {
+function Product(name, price) {
     this.product = {};
-
-    this.set = function(name, price) {
-        this.product.name = name;
-        this.product.price = price;
-    }
-    this.get = function() {
-        let spec = ('Товар: ' + this.product.name + ', Цена: ' + this.product.price + ' руб.');
-        return spec;
-    }
+    this.product.name = name;
+    this.product.price = price;
 }
 
 function Cart() {
@@ -40,22 +33,15 @@ function Cart() {
 }
 
 
-let product0 = new Product();
-product0.set('Ёлка', 450);
-console.log(product0.get());
-
-let product1 = new Product();
-product1.set('Сосна', 300);
-console.log(product1.get());
-
-let product2 = new Product();
-product2.set('Пихта', 825);
-console.log(product2.get());
-
+let product0 = new Product('Ёлка', 450);
+let product1 = new Product('Сосна', 300);
+let product2 = new Product('Пихта', 825);
 let cart = new Cart();
+
 cart.addProduct(product0);
 cart.addProduct(product1);
 cart.addProduct(product2);
+
 console.log(cart.getSum());
 console.log(cart.getAmount());
 
